@@ -1,0 +1,77 @@
+body {
+    background-color: antiquewhite;
+    display:flex;
+    justify-content: center;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    border: 2px solid black;
+    border-radius: 20px;
+    width:300px;
+    height: 425px;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: dimgray;
+    
+}
+
+.display {
+    border: solid 2px black;
+    margin-bottom: 15px;
+    padding:20px;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 25px;
+    background-color: azure;
+}
+
+
+.calcbtn-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    
+}
+
+button {
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid
+ 
+} 
+
+.clear:hover {
+    background-color: lightcoral;
+
+}
+/* Maybe make a long hover when you click an operator or just have that operand 
+outputted on the screen */
+
+button:hover {
+    transform: translateY(-0.2rem);
+    filter: brightness(125%);
+
+}
+
+.equal {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    border-radius: 2.5em;
+}
+
+
+.digits {
+    background-color: seagreen;
+}
+
+.operators {
+    background-color: orange;
+}
+
+.top-row {
+    background-color: lightblue;
+}
